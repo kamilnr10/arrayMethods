@@ -9,7 +9,7 @@ function aggregateIntoChunks(arr) {
       (arrayLength % chunkSize >= 4 && arrayLength % chunkSize <= 7)
     ) {
       chunks.push(arr.slice(i, i + chunkSize));
-      arrayLength = arrayLength - chunkSize;
+      arrayLength -= chunkSize;
       i += chunkSize;
     }
   }
