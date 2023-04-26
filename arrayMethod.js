@@ -144,8 +144,6 @@ function everyFn(array, callback) {
 
   // how to break reduce
   const everyReducer = (accumulator, currentItem, index, array) => {
-    console.log(accumulator);
-    console.log(currentItem);
     if (accumulator === false) {
       array.splice(index);
     }
